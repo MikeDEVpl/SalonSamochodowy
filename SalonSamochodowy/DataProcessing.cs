@@ -33,7 +33,14 @@ namespace SalonSamochodowy
 
         public Samochod PobierzSamochodNajdrozszy(List<Samochod> samochody)
         {
-            return null;
+            // wersja 1
+            //return samochody.OrderBy(s => s.CenaZDodatkami).First();
+
+            // wersja 2
+            return samochody.OrderBy(
+                s => (s.CenaBazowa +
+                s.ListaWyposazenia.Where(w => w.CzyStandard == false).
+                Sum(w => w.Cena))).First();
         }
 
         public List<Samochod> PosortujPoCenie(List<Samochod> samochody)
