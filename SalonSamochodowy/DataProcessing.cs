@@ -45,7 +45,13 @@ namespace SalonSamochodowy
 
         public List<Samochod> PosortujPoCenie(List<Samochod> samochody)
         {
-            return null;
+            //return samochody.OrderBy(s => s.CenaZDodatkami).ToList();
+
+            List<Samochod> wynik;
+            wynik = (from Samochod s in samochody
+                     orderby s.CenaZDodatkami
+                     select s).ToList();
+            return wynik;
         }
 
         public bool CzyMaWyposazenie(Samochod s, Wyposazenie w)
