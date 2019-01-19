@@ -66,7 +66,17 @@ namespace SalonSamochodowy
 
         public List<Samochod> PobierzSamochodyZWyposazeniem(List<Samochod> samochody, Wyposazenie w)
         {
-            return null;
+            //return samochody.Where(s => s.ListaWyposazenia.Contains(w)).ToList();
+
+            //return (from Samochod s in samochody
+            //        where s.ListaWyposazenia.Contains(w)
+            //        select s).ToList();
+
+            return (from Samochod s in samochody
+                    where (from Wyposazenie wyp in s.ListaWyposazenia
+                           where wyp.Nazwa == w.Nazwa
+                           select wyp).Count() > 0
+                    select s).ToList();
         }
     }
 }
