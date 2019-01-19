@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonSamochodowy.Dane", "Sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonSamochodowy.App", "SalonSamochodowy.App\SalonSamochodowy.App.csproj", "{9B3613C2-22DA-4FBF-8494-4EF57DBE5E8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonSamochodowy.LibTests", "SalonSamochodowy.LibTests\SalonSamochodowy.LibTests.csproj", "{79D33BCF-A9C4-480E-ADE2-F2EEA99ACACA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9B3613C2-22DA-4FBF-8494-4EF57DBE5E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B3613C2-22DA-4FBF-8494-4EF57DBE5E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B3613C2-22DA-4FBF-8494-4EF57DBE5E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D33BCF-A9C4-480E-ADE2-F2EEA99ACACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D33BCF-A9C4-480E-ADE2-F2EEA99ACACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D33BCF-A9C4-480E-ADE2-F2EEA99ACACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D33BCF-A9C4-480E-ADE2-F2EEA99ACACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

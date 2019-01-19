@@ -11,5 +11,11 @@ namespace SalonSamochodowy
         public string Nazwa { get; set; }
         public int Cena { get; set; }
         public bool CzyStandard { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            Wyposazenie other = (Wyposazenie)obj;
+            return this.Nazwa == other.Nazwa;
+        }
     }
 }

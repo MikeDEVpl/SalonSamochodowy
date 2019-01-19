@@ -56,7 +56,12 @@ namespace SalonSamochodowy
 
         public bool CzyMaWyposazenie(Samochod s, Wyposazenie w)
         {
-            return false;
+            // wersja "najczęściej działająca"
+            // żeby działało jak należy, trzeba zaimplementować Equals()
+            return s.ListaWyposazenia.Contains(w);
+
+            //return s.ListaWyposazenia.Select(wyp => wyp.Nazwa).
+            //    Contains(w.Nazwa);
         }
 
         public List<Samochod> PobierzSamochodyZWyposazeniem(List<Samochod> samochody, Wyposazenie w)
